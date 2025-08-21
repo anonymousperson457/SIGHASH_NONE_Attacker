@@ -211,7 +211,7 @@ def serialize_tx(parsed, new_outputs):
 
 def main():
     """Main function to process and broadcast transaction."""
-    txid = input("Enter txid: ").strip()
+    txid = input("Enter TXID: ").strip()
     url = f"https://mempool.space/api/tx/{txid}/hex"
     resp = requests.get(url)
     if resp.status_code != 200:
